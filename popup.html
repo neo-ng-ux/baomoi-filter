@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bộ lọc tin tức Baomoi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Bộ lọc tin tức Baomoi.com</h2>
+  
+  <!-- Nhập từ khóa -->
+  <div>
+    <label for="keywords">Nhập từ khóa (mỗi từ khóa trên một dòng):</label>
+    <textarea id="keywords" rows="4" style="width: 100%; resize: vertical;"></textarea>
+  </div>
+  
+  <!-- Nhập tên nguồn -->
+  <div>
+    <label for="sources">Nhập tên nguồn (mỗi nguồn trên một dòng):</label>
+    <textarea id="sources" rows="4" style="width: 100%; resize: vertical;"></textarea>
+  </div>
+  
+  <!-- Nhập selector cho tin tức -->
+  <div>
+    <label for="selector">Selector của tin tức:</label><br>
+    <input type="text" id="selector" placeholder="ví dụ: .news-item">
+  </div>
+  
+  <!-- Set Opacity for Hidden News Items -->
+  <div>
+    <label for="opacitySlider">Đặt độ mờ của tin bị ẩn:</label>
+    <input type="range" id="opacitySlider" min="0" max="1" step="0.1" value="0.2">
+  </div>
+  
+  <button id="save">Lưu cài đặt</button>
+  <p id="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

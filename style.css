@@ -1,0 +1,20 @@
+
+body {
+    width: 300px; /* Đảm bảo popup không bị co lại quá nhỏ */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-block: 0;
+    padding-inline: 0;
+    padding: 4px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+div {  }
